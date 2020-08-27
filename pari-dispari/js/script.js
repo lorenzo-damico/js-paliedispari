@@ -13,7 +13,7 @@
 
 // 1. Chiedo all'utente di scegliere pari o dispari
 var sceltaUtente = prompt("Scegli pari o dispari").toLowerCase();
-console.log(sceltaUtente);
+console.log("Il giocatore ha scelto: " + sceltaUtente);
 
 // 2. Chiedo all'utente di inserire un numero da 1 a 5
 var numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
@@ -39,6 +39,7 @@ function isEven(num) {
   } else {
     var esito = "dispari";
   }
+  console.log("Il numero è: " + esito);
   return esito;
 }
 
