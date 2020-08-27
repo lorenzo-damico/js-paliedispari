@@ -39,7 +39,7 @@ function isEven(num) {
   } else {
     var esito = "dispari";
   }
-  console.log("Il numero è: " + esito);
+  console.log("La somma è: " + esito);
   return esito;
 }
 
