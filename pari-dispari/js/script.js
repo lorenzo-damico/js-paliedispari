@@ -20,15 +20,15 @@ var numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
 console.log(numeroUtente);
 
 // 3. Creo un numero random da 1 a 5 per il computer usando una funzione
-function randomNumber() {
-  var numeroComputer = Math.floor(Math.random() * 5) + 1;
+function randomNumber(min, max) {
+  var numeroComputer = Math.floor(Math.random() * (max - min + 1)) + min;
   console.log(numeroComputer);
   return numeroComputer;
 }
 
 // 4. Sommo il numero inserito dall'utente con il numero
 //    random generato per il computer
-var somma = numeroUtente + randomNumber();
+var somma = numeroUtente + randomNumber(1, 5);
 console.log(somma);
 
 // 5. Scrivo una funzione che controlli se un
